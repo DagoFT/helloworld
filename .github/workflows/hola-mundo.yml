@@ -1,8 +1,6 @@
 name: hola-mundo
 on:
-  push:
-    paths:
-      - 'hello.sh'
+  workflow_dispatch:
 jobs:
   run-hello:
     runs-on: ubuntu-latest
