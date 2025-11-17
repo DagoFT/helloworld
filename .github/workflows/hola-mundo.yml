@@ -1,0 +1,12 @@
+name: hola-mundo
+on:
+  push:
+    paths:
+      - 'hello.sh'
+jobs:
+  run-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Ejecutar script
+        run: bash hello.sh
